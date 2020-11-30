@@ -4,7 +4,7 @@ with socket.socket() as s:
     host = 'localhost'
     port = 8001
     s.bind((host, port))
-    print(f'socket binded to {port}')
+    print(f'Server socket binded to {port}')
     s.listen()
     con, addr = s.accept()
     with con:
