@@ -6,5 +6,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     port = 8001
 
     s.connect((host, port))
-    s.sendall(b'hello there')
+    s.sendall(b'hello there hi')
     print("Server Response:" + str(s.recv(4096), 'utf-8'))
